@@ -1,6 +1,15 @@
 # An example of HCPP Rendering
 
-HCPP is a new platform view strategy that is only available on new (API 34+) Android devices running Impeller. It must be enabled via an opt in Android manifest flag:
+HCPP is a new platform view strategy that is only available on new (API 34+) Android devices running Impeller. 
+
+To use, checkout the flutter SDK and update to the very latest main channel version:
+
+```
+bin/flutter channel master
+bin/flutter upgrade
+```
+
+It must be enabled via an opt in Android manifest flag:
 
 ```
 <meta-data android:name="io.flutter.embedding.android.EnableSurfaceControl" android:value="true" />
