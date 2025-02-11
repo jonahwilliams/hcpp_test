@@ -1,0 +1,26 @@
+name: hcpp_test
+description: "An example of HCPP rendering"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0-76.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+depenency_overrides:
+  webview_flutter_android:
+    git:
+      url: git@github.com:jonahwilliams/packages.git
+      ref: test_webview_change
+      path: packages/webview_flutter/webview_flutter_android
